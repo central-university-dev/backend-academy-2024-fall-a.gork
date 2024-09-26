@@ -61,8 +61,7 @@ public class ThrowingExample {
             Thread.sleep(1000);
         }
 
-
-        if (isValid) {
+        if (!isValid) {
             throw new RuntimeException("Validation error");
         }
     }

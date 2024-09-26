@@ -9,11 +9,11 @@ public class NpeExample {
 
     public static void main(String[] args) {
         Divisor d = new Divisor();
-        boolean eq1 = d.divide(1d,2d).equals(d.divide(1d,2d));
-        boolean eq2 = d.divide(1d,0d).equals(d.divide(1d,0d));
-
-        log.info(eq1);
-        log.info(eq2);
+//        boolean eq1 = d.divide(1d,2d).equals(d.divide(1d,2d));
+//        boolean eq2 = d.divide(1d,0d).equals(d.divide(1d,0d));
+//
+//        log.info(eq1);
+//        log.info(eq2);
 
         // Need to wrap all possible null into an if
         Double d1 = d.divide(1d,0d);

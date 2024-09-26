@@ -9,7 +9,7 @@ public class StackOverflowErrorClass {
     static int i = 0;
 
     // Method to print numbers
-    public static int printNumber(int x)
+    public static int printNumber(int i)
     {
 
         i = i + 2;

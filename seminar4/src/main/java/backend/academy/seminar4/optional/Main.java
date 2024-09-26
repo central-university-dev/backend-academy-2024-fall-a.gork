@@ -30,11 +30,11 @@ public class Main {
             }
             return amount/items.size();
         };
-        double price = productService.getProductPriceOrDefault(1, handler);
+        double price = productService.getProductPriceOrDefault(10, handler);
         log.info("Price: " + price);
 
 
-        int stock = productService.getProductStockOrCalculate(2, () -> 10);
+        int stock = productService.getProductStockOrCalculate(20, () -> 10);
         log.info("Stock: " + stock);
 
         try {

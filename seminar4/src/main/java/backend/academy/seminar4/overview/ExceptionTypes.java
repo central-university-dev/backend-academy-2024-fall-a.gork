@@ -12,7 +12,7 @@ public class ExceptionTypes {
 
     public static void main(String[] args) {
         ExceptionTypes exceptionTypes = new ExceptionTypes();
-        exceptionTypes.runtimeExceptionExample(30, 0);
+//        exceptionTypes.runtimeExceptionExample(30, 0);
 //        exceptionTypes.fileNotFoundException("test");
 //        exceptionTypes.fileNotFoundExceptionThrows("test");
     }

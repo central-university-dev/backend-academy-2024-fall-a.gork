@@ -27,7 +27,10 @@ public class CompleteExample implements AutoCloseable {
     }
 
     public static void tryWithResources() {
-        try (CompleteExample ce = new CompleteExample()) {
+        try (
+            CompleteExample ce = new CompleteExample();
+            CompleteExample ce1 = new CompleteExample();
+        ) {
             ce.someCode();
         } catch (RuntimeException re) {
             log.error("Runtime exception, do something to restore the state and notify users", re);
@@ -35,9 +38,6 @@ public class CompleteExample implements AutoCloseable {
             log.error("Some exceptions that require additional actions in finally block", sqlException);
         } catch (Exception e) {
             log.error("Generic exception", e);
-        } finally {
-            // executes always!!!
-            // ce will be closed already
         }
     }
 

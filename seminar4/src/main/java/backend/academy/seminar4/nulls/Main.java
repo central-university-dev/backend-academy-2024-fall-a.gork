@@ -17,9 +17,14 @@ public class Main {
 
         log.info(user.getEmail());
 
-        User user1 = userService.findUserById(6);
+        try {
+            User user1 = userService.findUserById(6);
+            log.info(user1.getEmail());
+        } catch (NullPointerException e) {
+            log.error("User not found");
+        }
 
-        log.info(user1.getEmail());
+        log.info("Next step");
     }
 
     private static void initializeUsers(UserService userService) {
