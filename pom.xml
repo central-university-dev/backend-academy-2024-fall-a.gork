@@ -84,6 +84,7 @@
         <module>seminar3-record</module>
         <module>seminar3-sealed</module>
         <module>seminar4</module>
+        <module>seminar6</module>
     </modules>
 
     <dependencyManagement>
