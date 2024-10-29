@@ -33,6 +33,7 @@ public class AppInFileStorage {
             bind(ObjectMapper.class).toInstance(objectMapper);
             bind(new TypeLiteral<Cache<String, Notebook>>() {
             }).toInstance(cache);
+            
         }
     }
 
